@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:SecurePass/screens/homepage.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:upgrader/upgrader.dart';
+
+import 'imports.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     // );
     return PlatformProvider(
       builder: (context) => PlatformTheme(
-        builder:(context) => const PlatformApp(
+        builder:(context) =>  PlatformApp(
           debugShowCheckedModeBanner: false,
           localizationsDelegates: <LocalizationsDelegate<dynamic>>[
             DefaultMaterialLocalizations.delegate,
@@ -32,7 +32,11 @@ class MyApp extends StatelessWidget {
             DefaultCupertinoLocalizations.delegate
           ],
           title: "SecurePass",
-          home: HomePage(),
+          home: UpgradeAlert(
+            child: HomePage(),
+            barrierDismissible: true,
+            showReleaseNotes: true,
+            ),
         ), ),);
   }
 }

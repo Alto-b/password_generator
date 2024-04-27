@@ -1,7 +1,4 @@
-import 'package:any_link_preview/any_link_preview.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_link_previewer/flutter_link_previewer.dart';
-import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:SecurePass/imports.dart';
 
 class ScannerPage extends StatefulWidget {
   const ScannerPage({super.key});

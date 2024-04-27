@@ -24,6 +24,7 @@ dependencies:
     git:
       url: https://github.com/theyakka/qr.flutter.git
   screenshot: ^2.3.0
+  upgrader: ^10.2.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
